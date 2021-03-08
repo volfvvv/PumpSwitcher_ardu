@@ -21,7 +21,7 @@ uint8_t ds_address[8];
 #include "transmit_ble.h"
 #include "transmit_nrf.h"
 #if MENU_ENABLED == 1
-  #include "menu.h"
+#include "menu.h"
 #endif
 
 // { 0x28, 0xFF, 0x2D, 0x60, 0x2D, 0x04, 0x00, 0x73}
