@@ -17,12 +17,11 @@
 const uint8_t addresses[N_SENSORS][8] PROGMEM = {{ 0x28, 0xFF, 0x2D, 0x60, 0x2D, 0x04, 0x00, 0x73,} , };
 int8_t temperatures[N_SENSORS];
 uint8_t ds_address[8];
-// #include "/home/volk/Arduino/My/pumpswitch/PumpSwitchTerminal.h"
 #include "PumpSwitch.h"
 #include "transmit_ble.h"
 #include "transmit_nrf.h"
 #if MENU_ENABLED == 1
-//#include "/home/volk/Arduino/My/pumpswitch/menu.h"
+#include "menu.h"
 #endif
 
 // { 0x28, 0xFF, 0x2D, 0x60, 0x2D, 0x04, 0x00, 0x73}
